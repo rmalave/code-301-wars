@@ -1,8 +1,7 @@
-function capitalize(s){
-  let str = s.split('');
+function isNice(arr){
+  if(arr.length === 0) return false;
   
-  let even = str.map((x,index) => index % 2 === 0 ? x.toUpperCase() : x).join('');
-  let odd = str.map((x,index) => index % 2 !== 0 ? x.toUpperCase() : x).join('');
-
-  return [even, odd];
+  return (arr.every(function(current, index, array) {
+    return (array.includes(current + 1) || array.includes(current - 1));
+  }));
 }

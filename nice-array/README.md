@@ -1,10 +1,12 @@
-# Alternate capitalization
-https://www.codewars.com/kata/alternate-capitalization/javascript
+# A Nice array is defined to be an array where for every value n in the array, there is also an element n-1 or n+1 in the array.
 
-Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+example:
+```javascript
+[2,10,9,3] is Nice array because
 
-For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
-
-The input will be a lowercase string with no spaces.
-
-Good luck!
+2=3-1
+10=9+1
+3=2+1
+9=10-1
+```
+Write a function named isNice/IsNice that returns true if its array argument is a Nice array, else false. You should also return false if input array has no elements.
