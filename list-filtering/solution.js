@@ -1,0 +1,1 @@
+filter_list = l => l.filter(n => typeof(n) !== 'string')
